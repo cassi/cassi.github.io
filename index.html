@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Cassi Tucker | Digital Historian | Web Developer</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<!--Thanks to https://css-tricks.com/snippets/jquery/smooth-scrolling/ for smooth scroll snippet -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	<script>
+		$(function() {
+			$('a[href*="#"]:not([href="#"])').click(function() {
+				if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+					var target = $(this.hash);
+					target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+					if (target.length) {
+						$('html, body').animate({
+							scrollTop: target.offset().top
+						}, 1000);
+						return false;
+					}
+				}
+			});
+		});
+	</script>
+</head>
+
+<body>
+	<header id="hero-header">
+		<header id="hero-text">
+			<h1>Cassandra Tucker</h1>
+			<h2><span class="header-nobreak">Web Developer &amp;</span> <span class="header-nobreak">Aspiring Digital Historian</span></h2>
+		</header>
+		<a href="#sticky-nav"><div id="arrow-down"></div></a>
+	</header>
+
+	<nav id="sticky-nav">
+		<span id="navigation-content">
+			<span id="name-brand">Cassandra Tucker</span>
+			<div id="nav-links">
+				<ul>
+					<li><a href="#about" class="smoothScroll">About</a></li>
+					<li><a href="#projects" class="smoothScroll">Projects</a></li>
+					<li><a href="#resume" class="smoothScroll">CV/Resume</a></li>
+				</ul>
+			</div>
+		</span>
+	</nav>
+
+	<section id="main-content">
+
+		<section id="about">
+			<h2>About</h2>
+			<p>
+				I am an aspiring Digital Historian with a particular interest in the medieval period.  Some of my research interests include manuscript transmission, Irish monasticism, and papal manuscripts.  I earned a Bachelor of Arts in History from the University of Nebraska at Omaha in May 2015; I simultaneously earned a Bachelor of Science in Information Technology Innovation from the same institution.  I intend to utilize my interdisciplinary skillset to produce, maintain, and manage Digital Humanities projects.
+			</p>
+
+			<p>
+				I have been a web developer since May 2012, and over the last four years have also taken on the role of project manager and “Scrum Master” within my development teams.  I have experience working with modern web frameworks, such as Laravel and Ruby on Rails; databases, including MySQL and Postgres; and both new and established web trends, such as HTML5 and Sass.
+			</p>
+		
+			<p>
+				When I’m not working on academic research or building websites, I enjoy weekly trivia, live music, and quiet nights in with my cat, Scout.
+			</p>
+		</section>
+
+		<section id="skills-interests">
+			<section id="interests">
+				<header><h3>Research Interests</h3></header>
+				<ul>
+					<li>Digital Humanities &amp; Digital History</li>
+					<li>Manuscript Transmission</li>
+					<li>Irish Monasticism &amp; Religious Life</li>
+					<li>Papal Manuscripts</li>
+				</ul>
+			</section>
+
+			<section id="technical-skills">
+				<header><h3>Technical Skills</h3></header>
+				<ul>
+					<li>PHP</li>
+					<li>Laravel 5+</li>
+					<li>CakePHP</li>
+					<li>HTML/CSS</li>
+					<li>SASS</li>
+					<li>Bourbon/Neat/Bitters</li>
+					<li>C#/.NET MVC</li>
+				</ul>
+			</section>
+		</section>
+
+		<section id="projects">
+			<h2>Projects</h2>
+
+		</section>
+
+		<section id="resume">
+			<h2>Resume</h2>
+			<section id="left-col">
+				<section id="education">
+					<h3>Education</h3>
+					<p>
+						<b>University of Nebraska-Omaha</b><br/>
+						B.A. History/B.S. IT Innovation<br/>
+						<i>2015</i>
+					</p>
+					<p>
+						<b>Fairbury Jr/Sr High School</b><br/>
+						<i>2010</i>
+					</p>
+
+				</section>
+				<section id="skills">
+					<h3>Skills</h3>
+					<p>
+						<b>Languages &amp; Frameworks</b><br/>
+						PHP (proficient)<br/>
+						Laravel 5+ (proficient)<br/>
+						CakePHP (proficient)<br/>
+						HTML/CSS (proficient)<br/>
+						SASS (intermediate)<br/>
+						C#/.NET MVC (intermediate)
+					</p>
+
+					<p>
+						<b>Programming Software</b><br/>
+						PHPStorm (proficient)<br/>
+						Sublime Text (proficient)<br/>
+						Visual Studio (intermediate)<br/>
+						Microsoft Suite (proficient)<br/>
+						Adobe InDesign (novice)<br/>
+					</p>
+
+				</section>
+				<section id="references">
+					<h3>References</h3>
+					<p>Available upon request.</p>
+				</section>
+			</section>
+
+			<section id="right-col">
+				<section id="work-experience">
+					<h3>Work Experience</h3>
+					<section id="work-experience-attic">
+
+					</section>
+					<section id="work-experience-dean">
+
+					</section>
+				</section>
+			</section>
+		</section>
+	</section>
+
+	<footer>
+	&copy; 2016 cassi tucker
+	<br/>
+	site design by <a href="http://karajoann.com" target="_blank">kara kammerer</a>
+	</footer>
+
+</body>
+
+</html>

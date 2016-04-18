@@ -1,0 +1,199 @@
+@import "bourbon/bourbon";
+$visual-grid: true;
+@import "neat/neat";
+
+@include font-face("abraham-lincoln", "../resources/fonts/AbrahamLincoln", regular);
+@include font-face("lato-regular", "../resources/fonts/Lato-Regular", regular);
+@include font-face("lato-light", "../resources/fonts/Lato-Light", light);
+
+$yellow: #E2B460;
+$white: #FFFFFF;
+$grey: #666666;
+$light-grey: #EEEEEE;
+
+body {
+	margin: 0 0;
+	padding: 0 0;
+	font-family: 'lato-light', 'Helvetica', sans-serif;
+	color: $grey;
+
+	ul {
+		list-style-type: none;
+	}
+
+	h2, h3, h4 {
+		font-family: 'lato-regular', 'Helvetica', sans-serif;
+	}
+
+	h2 {
+		color: $yellow;
+	}
+
+	a {
+		text-decoration: none;
+		color: $grey;
+	}
+}
+
+#hero-header {
+	background-image: linear-gradient(rgba(226, 180, 96, 0.4), rgba(226, 180, 96, 0.4)), url("../resources/img/notebook-computer-chill-relax.jpg");
+	background-size: cover;
+	height: 100vh;
+	margin: 0 auto 0 auto;
+	padding: 0 auto 0 auto;
+	
+	#hero-text {
+		padding-top: 25vh;
+		text-align: center;
+
+		h1 {
+			font-family: 'abraham-lincoln', serif;
+			font-size: 100px;
+			margin-bottom: 0;
+		}
+
+		h2 {
+			font-size: 35px;
+			margin-top: 0;
+		}
+
+		h1, h2 {
+			color: $white;
+		}
+
+		.header-nobreak {
+			display: inline-block;
+			margin: auto;
+		}
+	}
+
+	.arrow-down {
+		border: 2px solid $white;
+		border-radius: 50%;
+		width: 65px;
+		height: 65px;
+		background-color: $white;
+		position: relative;
+	}
+	
+	#arrow-down:after {
+		content: "";
+		position: absolute;
+		left: 50%;
+		width: 25px;
+		height: 25px;
+		border-width: 0px 2px 2px 0px;
+		transform: rotate(45deg) translate(-50%);
+		transform-origin: left;
+		border-style: solid;
+		border-color: $white;
+	}
+}
+
+#main-content {
+	@include span-columns(8);
+	@include shift(2);
+	h2 {
+		text-align: center;
+	}
+}
+
+#sticky-nav {
+	@include span-columns(12);
+	background-color: $light-grey;
+
+	#navigation-content {
+		@include span-columns(10);
+		@include shift(1);
+
+		#name-brand {
+			@include span-columns(3);
+			font-size: 36px;
+			font-family: 'abraham-lincoln', serif;
+			margin-top: 20px;
+			margin-bottom: 20px;
+		}
+
+		#nav-links {
+			@include span-columns(9);
+			font-size: 14px;
+			text-transform: uppercase;
+			margin-top: 26px;
+			margin-bottom: 26px;
+			ul {
+				float:right;
+				margin: 0;
+				li {
+					display: inline;
+					padding-left: 15px;
+					a {
+						&:hover {
+							border-bottom: 2px solid $yellow;
+						}
+						&:active {
+							border-bottom: 2px solid $yellow;
+						}
+					}
+
+					a.active {
+						border-bottom: 2px solid $yellow;
+					}
+				}
+			}
+		}
+	}
+
+	
+
+}
+
+#skills-interests {
+	@include span-columns(12);
+	ul {
+		padding: 0;
+	}
+}
+
+#interests {
+	@include span-columns(6);
+	text-align: center;
+}
+
+#technical-skills {
+	@include span-columns(6);
+	text-align: center;
+}
+
+#projects {
+
+}
+
+#resume {
+	@include span-columns(12);
+
+	#left-col {
+		@include span-columns(6);
+
+		#education, #skills, #references {
+			@include span-columns(12);
+		}
+	}
+
+	#right-col {
+		@include span-columns(6);
+
+		#work-experience {
+			@include span-columns(12);
+		}
+	}
+}
+
+footer {
+	@include span-columns(12);
+	text-align: center;
+	font-size: 12px;
+	padding: 25px;
+	a:hover {
+		border-bottom: 1px solid $yellow;
+	}
+}
