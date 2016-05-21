@@ -231,5 +231,10 @@ footer {
     margin-right: 0; }
   footer a:hover {
     border-bottom: 1px solid #E2B460; }
+  footer #contact-icons .icon {
+    max-width: 25px;
+    opacity: .2; }
+    footer #contact-icons .icon:hover {
+      opacity: .5; }
 
 /*# sourceMappingURL=style.css.map */

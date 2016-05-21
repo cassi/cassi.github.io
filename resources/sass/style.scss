@@ -196,4 +196,14 @@ footer {
 	a:hover {
 		border-bottom: 1px solid $yellow;
 	}
+
+	#contact-icons {
+		.icon {
+			max-width: 25px;
+			opacity: .2;
+			&:hover {
+				opacity: .5;
+			}
+		}
+	}
 }
