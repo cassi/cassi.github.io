@@ -1,5 +1,5 @@
 @import "bourbon/bourbon";
-$visual-grid: true;
+// $visual-grid: true;
 @import "neat/neat";
 
 @include font-face("abraham-lincoln", "../resources/fonts/AbrahamLincoln", regular);
@@ -25,6 +25,10 @@ body {
 		font-family: 'lato-regular', 'Helvetica', sans-serif;
 	}
 
+	h3 {
+		margin-bottom: -10px;
+	}
+
 	h2 {
 		color: $yellow;
 	}
@@ -33,6 +37,10 @@ body {
 		text-decoration: none;
 		color: $grey;
 	}
+	.decorative-font {
+    	font-family: 'abraham-lincoln', serif;
+    	font-size: 2em;
+    }
 }
 
 #hero-header {
@@ -90,12 +98,14 @@ body {
 	}
 }
 
+
 #main-content {
 	@include span-columns(8);
 	@include shift(2);
 	h2 {
 		text-align: center;
 	}
+	font-size: .8em;
 }
 
 #sticky-nav {
@@ -142,20 +152,30 @@ body {
 			}
 		}
 	}
-
-	
-
 }
 
-#skills-interests {
-	@include span-columns(12);
-	ul {
-		padding: 0;
+
+.sticky {
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
+.sticky + #main-content {
+  padding-top: 75px;
+}
+
+
+#about, #interests, #projects, #resume, #references {
+	margin-bottom: 20px;
+	h2 {
+		margin-bottom: 5px;
 	}
 }
 
+
 #interests {
-	@include span-columns(6);
+	@include span-columns(12);
 	text-align: center;
 }
 
@@ -165,7 +185,7 @@ body {
 }
 
 #projects {
-
+	text-align: center;
 }
 
 #resume {
@@ -174,7 +194,7 @@ body {
 	#left-col {
 		@include span-columns(6);
 
-		#education, #skills, #references {
+		#education, #skills {
 			@include span-columns(12);
 		}
 	}
@@ -186,6 +206,10 @@ body {
 			@include span-columns(12);
 		}
 	}
+}
+
+#references {
+	text-align: center;
 }
 
 footer {
