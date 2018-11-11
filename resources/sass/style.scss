@@ -8,7 +8,7 @@
 
 $yellow: #E2B460;
 $white: #FFFFFF;
-$grey: #666666;
+$grey: #595959;
 $light-grey: #EEEEEE;
 
 body {
@@ -19,6 +19,11 @@ body {
 
 	ul {
 		list-style-type: none;
+		li {
+			&:before {
+				content: "\2713 \0020";
+			}
+		}
 	}
 
 	h2, h3, h4 {
@@ -35,12 +40,17 @@ body {
 
 	a {
 		text-decoration: none;
+		background-color: rgba($yellow, .25);
 		color: $grey;
+		padding: 2px;
+		&:hover {
+			border-bottom: 2px solid $yellow;
+		}
 	}
 	.decorative-font {
-    	font-family: 'abraham-lincoln', serif;
-    	font-size: 2em;
-    }
+		font-family: 'abraham-lincoln', serif;
+		font-size: 2em;
+	}
 }
 
 #hero-header {
@@ -105,7 +115,10 @@ body {
 	h2 {
 		text-align: center;
 	}
-	font-size: .8em;
+	font-size: 1em;
+	p {
+		line-height: 1.5;
+	}
 }
 
 #sticky-nav {
@@ -148,6 +161,10 @@ body {
 					a.active {
 						border-bottom: 2px solid $yellow;
 					}
+
+					&:before {
+						content: none;
+					}
 				}
 			}
 		}
@@ -162,7 +179,7 @@ body {
 }
 
 .sticky + #main-content {
-  padding-top: 75px;
+	padding-top: 75px;
 }
 
 
@@ -191,21 +208,21 @@ body {
 #resume {
 	@include span-columns(12);
 
-	#left-col {
-		@include span-columns(6);
+	// #left-col {
+	// 	@include span-columns(6);
 
-		#education, #skills {
-			@include span-columns(12);
-		}
-	}
+	// 	#education, #skills {
+	// 		@include span-columns(12);
+	// 	}
+	// }
 
-	#right-col {
-		@include span-columns(6);
+	// #right-col {
+	// 	@include span-columns(6);
 
-		#work-experience {
-			@include span-columns(12);
-		}
-	}
+	// 	#work-experience {
+	// 		@include span-columns(12);
+	// 	}
+	// }
 }
 
 #references {
@@ -228,6 +245,10 @@ footer {
 			&:hover {
 				opacity: .5;
 			}
+		}
+		a {
+			background-color: transparent;
+			text-decoration: none;
 		}
 	}
 }
