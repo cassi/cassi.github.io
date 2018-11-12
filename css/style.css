@@ -180,6 +180,9 @@ body .decorative-font {
   display: inline;
   padding-left: 15px;
 }
+#sticky-nav #navigation-content #nav-links ul li a {
+  padding: 2px 5px;
+}
 #sticky-nav #navigation-content #nav-links ul li a:hover {
   border-bottom: 2px solid #E2B460;
 }
@@ -203,10 +206,10 @@ body .decorative-font {
   padding-top: 75px;
 }
 
-#about, #interests, #projects, #resume, #references {
+#about, #interests, #projects, #resume, #references, #contact {
   margin-bottom: 20px;
 }
-#about h2, #interests h2, #projects h2, #resume h2, #references h2 {
+#about h2, #interests h2, #projects h2, #resume h2, #references h2, #contact h2 {
   margin-bottom: 5px;
 }
 
@@ -243,6 +246,24 @@ body .decorative-font {
   width: 100%;
 }
 #resume:last-child {
+  margin-right: 0;
+}
+#resume #left-col {
+  float: left;
+  display: block;
+  margin-right: 2.3576515979%;
+  width: 48.821174201%;
+}
+#resume #left-col:last-child {
+  margin-right: 0;
+}
+#resume #right-col {
+  float: left;
+  display: block;
+  margin-right: 2.3576515979%;
+  width: 48.821174201%;
+}
+#resume #right-col:last-child {
   margin-right: 0;
 }
 

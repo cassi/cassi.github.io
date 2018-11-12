@@ -150,6 +150,7 @@ body {
 					display: inline;
 					padding-left: 15px;
 					a {
+						padding: 2px 5px;
 						&:hover {
 							border-bottom: 2px solid $yellow;
 						}
@@ -183,7 +184,7 @@ body {
 }
 
 
-#about, #interests, #projects, #resume, #references {
+#about, #interests, #projects, #resume, #references, #contact {
 	margin-bottom: 20px;
 	h2 {
 		margin-bottom: 5px;
@@ -208,21 +209,13 @@ body {
 #resume {
 	@include span-columns(12);
 
-	// #left-col {
-	// 	@include span-columns(6);
+	#left-col {
+		@include span-columns(6);
+	}
 
-	// 	#education, #skills {
-	// 		@include span-columns(12);
-	// 	}
-	// }
-
-	// #right-col {
-	// 	@include span-columns(6);
-
-	// 	#work-experience {
-	// 		@include span-columns(12);
-	// 	}
-	// }
+	#right-col {
+		@include span-columns(6);
+	}
 }
 
 #references {
