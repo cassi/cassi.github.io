@@ -57,11 +57,11 @@ body a:hover {
 }
 body .decorative-font {
   font-family: "abraham-lincoln", serif;
-  font-size: 2em;
+  font-size: 2.5em;
 }
 
 #hero-header {
-  background-image: linear-gradient(rgba(226, 180, 96, 0.4), rgba(226, 180, 96, 0.4)), url("../resources/img/notebook-computer-chill-relax.jpg");
+  background-image: linear-gradient(rgba(226, 180, 96, 0.3), rgba(226, 180, 96, 0.3)), url("../resources/img/work-staff-portrait-4.jpg");
   background-size: cover;
   height: 100vh;
   margin: 0 auto 0 auto;
@@ -81,18 +81,18 @@ body .decorative-font {
   margin-top: 0;
 }
 #hero-header #hero-text h1, #hero-header #hero-text h2 {
-  color: #FFFFFF;
+  color: #595959;
 }
 #hero-header #hero-text .header-nobreak {
   display: inline-block;
   margin: auto;
 }
 #hero-header .arrow-down {
-  border: 2px solid #FFFFFF;
+  border: 2px solid #595959;
   border-radius: 50%;
   width: 65px;
   height: 65px;
-  background-color: #FFFFFF;
+  background-color: #595959;
   position: relative;
 }
 #hero-header #arrow-down:after {
@@ -105,7 +105,7 @@ body .decorative-font {
   transform: rotate(45deg) translate(-50%);
   transform-origin: left;
   border-style: solid;
-  border-color: #FFFFFF;
+  border-color: #595959;
 }
 
 #main-content {
@@ -121,6 +121,7 @@ body .decorative-font {
 }
 #main-content h2 {
   text-align: center;
+  font-variant: small-caps;
 }
 #main-content p {
   line-height: 1.5;
