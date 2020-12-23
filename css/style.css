@@ -17,6 +17,35 @@ body {
   font-family: "Open Sans", "Helvetica", sans-serif;
   color: #4D4D4D;
 }
+
+#hero-header {
+  background-image: linear-gradient(rgba(40, 111, 115, 0.3), rgba(40, 111, 115, 0.3)), url("../resources/img/deco-pattern.png");
+   background-color: #286F73;
+   height: 50vh;
+   margin: 0 auto 0 auto;
+   padding: 0 auto 0 auto;
+ }
+ #hero-header #hero-text {
+   padding-top: 12.5vh;
+   text-align: center;
+ }
+ #hero-header #hero-text h1 {
+   font-family: "Megrim", "Open Sans";
+   font-size: 85px;
+   margin-top:0;
+   margin-bottom: 0;
+ }
+ #hero-header #hero-text p {
+   font-size: 18px;
+   margin-top: 10px;
+   margin-bottom:0;
+   font-weight: 100;
+   color: #FEFDFD;
+ }
+ #hero-header #hero-text h1, #hero-header #hero-text h2 {
+   color: #FEFDFD;
+ }
+
 #education, #work-experience, #skills, #presentations, #service, #contact {
   padding-bottom: 10px;
 }
@@ -44,7 +73,7 @@ body a:hover {
   border-bottom: 2px solid #486F73;
 }
 body .decorative-font {
-  font-family: "Poiret One", "Open Sans", sans-serif;
+  font-family: "Megrim", "Open Sans", sans-serif;
   font-size: 2em;
 }
 
@@ -101,7 +130,7 @@ body .decorative-font {
   margin-right: 2.3576515979%;
   width: 35%;
   font-size: 40px;
-  font-family: "Poiret One", "Open Sans", sans-serif;
+  font-family: "Megrim", "Open Sans", sans-serif;
   margin-top: 20px;
   margin-bottom: 20px;
 }
