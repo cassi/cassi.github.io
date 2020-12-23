@@ -7,29 +7,18 @@ html {
   box-sizing: inherit;
 }
 
-@font-face {
-  font-family: "abraham-lincoln";
-  font-style: normal;
-  font-weight: regular;
-  src: url("../resources/fonts/AbrahamLincoln.eot?#iefix") format("embedded-opentype"), url("../resources/fonts/AbrahamLincoln.woff2") format("woff2"), url("../resources/fonts/AbrahamLincoln.woff") format("woff"), url("../resources/fonts/AbrahamLincoln.ttf") format("truetype"), url("../resources/fonts/AbrahamLincoln.svg#abraham-lincoln") format("svg");
+html {
+  background: url("../resources/img/deco-pattern.png") repeat;
 }
-@font-face {
-  font-family: "lato-regular";
-  font-style: normal;
-  font-weight: regular;
-  src: url("../resources/fonts/Lato-Regular.eot?#iefix") format("embedded-opentype"), url("../resources/fonts/Lato-Regular.woff2") format("woff2"), url("../resources/fonts/Lato-Regular.woff") format("woff"), url("../resources/fonts/Lato-Regular.ttf") format("truetype"), url("../resources/fonts/Lato-Regular.svg#lato-regular") format("svg");
-}
-@font-face {
-  font-family: "lato-light";
-  font-style: normal;
-  font-weight: light;
-  src: url("../resources/fonts/Lato-Light.eot?#iefix") format("embedded-opentype"), url("../resources/fonts/Lato-Light.woff2") format("woff2"), url("../resources/fonts/Lato-Light.woff") format("woff"), url("../resources/fonts/Lato-Light.ttf") format("truetype"), url("../resources/fonts/Lato-Light.svg#lato-light") format("svg");
-}
+
 body {
   margin: 0 0;
   padding: 0 0;
-  font-family: "lato-light", "Helvetica", sans-serif;
-  color: #595959;
+  font-family: "Open Sans", "Helvetica", sans-serif;
+  color: #4D4D4D;
+}
+#education, #work-experience, #skills, #presentations, #service, #contact {
+  padding-bottom: 10px;
 }
 body ul {
   list-style-type: none;
@@ -38,74 +27,25 @@ body ul li:before {
   content: "✓ ";
 }
 body h2, body h3, body h4 {
-  font-family: "lato-regular", "Helvetica", sans-serif;
+  font-family: "Open Sans", "Helvetica", sans-serif;
 }
 body h3 {
   margin-bottom: -10px;
 }
 body h2 {
-  color: #E2B460;
+  color: #486F73;
 }
 body a {
   text-decoration: none;
-  background-color: rgba(226, 180, 96, 0.25);
-  color: #595959;
+  color: #486F73;
   padding: 2px;
 }
 body a:hover {
-  border-bottom: 2px solid #E2B460;
+  border-bottom: 2px solid #486F73;
 }
 body .decorative-font {
-  font-family: "abraham-lincoln", serif;
-  font-size: 2.5em;
-}
-
-#hero-header {
-  background-image: linear-gradient(rgba(226, 180, 96, 0.3), rgba(226, 180, 96, 0.3)), url("../resources/img/work-staff-portrait-4.jpg");
-  background-size: cover;
-  height: 100vh;
-  margin: 0 auto 0 auto;
-  padding: 0 auto 0 auto;
-}
-#hero-header #hero-text {
-  padding-top: 25vh;
-  text-align: center;
-}
-#hero-header #hero-text h1 {
-  font-family: "abraham-lincoln", serif;
-  font-size: 100px;
-  margin-bottom: 0;
-}
-#hero-header #hero-text h2 {
-  font-size: 35px;
-  margin-top: 0;
-}
-#hero-header #hero-text h1, #hero-header #hero-text h2 {
-  color: #595959;
-}
-#hero-header #hero-text .header-nobreak {
-  display: inline-block;
-  margin: auto;
-}
-#hero-header .arrow-down {
-  border: 2px solid #595959;
-  border-radius: 50%;
-  width: 65px;
-  height: 65px;
-  background-color: #595959;
-  position: relative;
-}
-#hero-header #arrow-down:after {
-  content: "";
-  position: absolute;
-  left: 50%;
-  width: 25px;
-  height: 25px;
-  border-width: 0px 2px 2px 0px;
-  transform: rotate(45deg) translate(-50%);
-  transform-origin: left;
-  border-style: solid;
-  border-color: #595959;
+  font-family: "Poiret One", "Open Sans", sans-serif;
+  font-size: 2em;
 }
 
 #main-content {
@@ -115,13 +55,14 @@ body .decorative-font {
   width: 65.8807828007%;
   margin-left: 17.0596085997%;
   font-size: 1em;
+  background-color: #FEFDFD;
+  padding: 20px;
 }
 #main-content:last-child {
   margin-right: 0;
 }
 #main-content h2 {
   text-align: center;
-  font-variant: small-caps;
 }
 #main-content p {
   line-height: 1.5;
@@ -132,7 +73,8 @@ body .decorative-font {
   display: block;
   margin-right: 2.3576515979%;
   width: 100%;
-  background-color: #EEEEEE;
+  background-color: #286F73;
+  color: #FBFAF9;
 }
 #sticky-nav:last-child {
   margin-right: 0;
@@ -144,16 +86,22 @@ body .decorative-font {
   width: 82.9403914003%;
   margin-left: 8.5298042998%;
 }
+
+#sticky-nav a {
+  color: #FBFAF9;
+}
+
 #sticky-nav #navigation-content:last-child {
   margin-right: 0;
 }
+
 #sticky-nav #navigation-content #name-brand {
   float: left;
   display: block;
   margin-right: 2.3576515979%;
-  width: 23.2317613015%;
-  font-size: 36px;
-  font-family: "abraham-lincoln", serif;
+  width: 35%;
+  font-size: 40px;
+  font-family: "Poiret One", "Open Sans", sans-serif;
   margin-top: 20px;
   margin-bottom: 20px;
 }
@@ -164,11 +112,11 @@ body .decorative-font {
   float: left;
   display: block;
   margin-right: 2.3576515979%;
-  width: 74.4105871005%;
+  width: 62%;
   font-size: 14px;
   text-transform: uppercase;
-  margin-top: 26px;
-  margin-bottom: 26px;
+  margin-top: 35px;
+  margin-bottom: 35px;
 }
 #sticky-nav #navigation-content #nav-links:last-child {
   margin-right: 0;
@@ -185,13 +133,13 @@ body .decorative-font {
   padding: 2px 5px;
 }
 #sticky-nav #navigation-content #nav-links ul li a:hover {
-  border-bottom: 2px solid #E2B460;
+  border-bottom: 2px solid #FBFAF9;
 }
 #sticky-nav #navigation-content #nav-links ul li a:active {
-  border-bottom: 2px solid #E2B460;
+  border-bottom: 2px solid #FBFAF9;
 }
 #sticky-nav #navigation-content #nav-links ul li a.active {
-  border-bottom: 2px solid #E2B460;
+  border-bottom: 2px solid #FBFAF9;
 }
 #sticky-nav #navigation-content #nav-links ul li:before {
   content: none;
@@ -285,7 +233,7 @@ footer:last-child {
   margin-right: 0;
 }
 footer a:hover {
-  border-bottom: 1px solid #E2B460;
+  border-bottom: 1px solid #486F73;
 }
 footer #contact-icons .icon {
   max-width: 25px;
