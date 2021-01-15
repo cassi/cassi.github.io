@@ -30,7 +30,7 @@ body {
    text-align: center;
  }
  #hero-header #hero-text h1 {
-   font-family: "Megrim", "Open Sans";
+   font-family: "Voltaire", "Open Sans";
    font-size: 85px;
    margin-top:0;
    margin-bottom: 0;
@@ -73,7 +73,7 @@ body a:hover {
   border-bottom: 2px solid #486F73;
 }
 body .decorative-font {
-  font-family: "Megrim", "Open Sans", sans-serif;
+  font-family: "Voltaire", "Open Sans", sans-serif;
   font-size: 2em;
 }
 
@@ -130,7 +130,7 @@ body .decorative-font {
   margin-right: 2.3576515979%;
   width: 35%;
   font-size: 40px;
-  font-family: "Megrim", "Open Sans", sans-serif;
+  font-family: "Voltaire", "Open Sans", sans-serif;
   margin-top: 20px;
   margin-bottom: 20px;
 }
