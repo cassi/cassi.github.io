@@ -1,4 +1,12 @@
 @charset "UTF-8";
+@font-face { 
+  gitily: "Space Grotesk"; 
+  src: url("fonts/SpaceGrotesk.ttf") format("ttf"); 
+  font-weight: normal; 
+  font-style: normal; 
+  font-display: swap; 
+}
+
 html {
   box-sizing: border-box;
 }
@@ -14,7 +22,7 @@ html {
 body {
   margin: 0 0;
   padding: 0 0;
-  font-family: "Lexend", "Helvetica", sans-serif;
+  font-family: "Space Grotesk", sans-serif;
   color: #4D4D4D;
   font-weight: 300;
 }
@@ -57,7 +65,7 @@ body ul li:before {
   content: "✓ ";
 }
 body h2, body h3, body h4 {
-  font-family: "Lexend Zetta", "Helvetica", sans-serif;
+  font-family: "Space Grotesk", sans-serif;
 }
 body h3 {
   margin-bottom: -10px;
@@ -74,7 +82,7 @@ body a:hover {
   border-bottom: 2px solid #486F73;
 }
 body .decorative-font {
-  font-family: "Lexend Zetta", "Helvetica", sans-serif;
+  font-family: "Space Grotesk", sans-serif;
   font-size: 1.5em;
 }
 
@@ -131,7 +139,7 @@ body .decorative-font {
   margin-right: 2.3576515979%;
   width: 35%;
   font-size: 40px;
-  font-family: "Lexend Zetta", "Helvetica", sans-serif;
+  font-family: "Space Grotesk", sans-serif;
   margin-top: 20px;
   margin-bottom: 20px;
 }
