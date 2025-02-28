@@ -21,12 +21,15 @@ body {
 #hero-header {
   background-image: linear-gradient(rgba(40, 111, 115, 0.3), rgba(40, 111, 115, 0.3)), url("../resources/img/deco-pattern.png");
    background-color: #286F73;
-   height: 50vh;
+   height: 350px;
    margin: 0 auto 0 auto;
    padding: 0 auto 0 auto;
  }
  #hero-header #hero-text {
-   padding-top: 12.5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   padding-top: 50px;
    text-align: center;
  }
  #hero-header #hero-text h1 {
